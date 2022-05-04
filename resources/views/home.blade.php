@@ -20,7 +20,9 @@
                     @endif
                     
                     <h6>Anno d'uscita nelle sale:</h6>
-                    <h4>{{ $movie->date }}</h4>
+                    <h4>{{ date_format(date_create($movie->date), 'Y') }}</h4>
+
+                    
                     <h6>Voto:</h6>
                     <h4>{{ $movie->vote }}</h4>
                 </div>
