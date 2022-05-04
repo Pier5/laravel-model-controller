@@ -12,6 +12,9 @@ class PageController extends Controller
         $data = [
             'movies' => $movies
         ];
-        return view('home', $data);
+        $vote = [
+            'maxVote' => 10
+        ];
+        return view('home', $data, $vote);
     }
 }

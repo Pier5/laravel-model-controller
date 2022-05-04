@@ -28,7 +28,7 @@
                         @for ($i = 0; $i < ceil($movie->vote / 2); $i++) 
                             <i class="fullstar fa-solid fa-star"></i>
                          @endfor
-                        @for ($j = 0; $j < floor((10 - $movie->vote) / 2); $j++)
+                        @for ($j = 0; $j < floor(($maxVote - $movie->vote) / 2); $j++)
                             <i class="emptystar fa-solid fa-star"></i>   
                         @endfor                    
                     </div>
