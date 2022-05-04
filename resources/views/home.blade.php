@@ -11,8 +11,14 @@
                     <h1>{{ $movie->title }}</h1>
                     <h6>Titolo originalee:</h6>
                     <h2>{{ $movie->original_title }}</h2>
+                    
                     <h6>Nazionalità:</h6>
-                    <h3>{{ $movie->nationality }}</li>
+                    @if ($movie->nationality === 'american') 
+                        <h3>US</h3>
+                    @elseif($movie->nationality === 'american/british') 
+                        <h3>US/UK</h3>
+                    @endif
+                    
                     <h6>Anno d'uscita nelle sale:</h6>
                     <h4>{{ $movie->date }}</h4>
                     <h6>Voto:</h6>
