@@ -43,6 +43,17 @@ main {
                 color: gold;
                 font-size: 1.1rem;
             }
+            .stars {
+                padding: 10px 0;
+                display: flex;
+                .fullstar {
+                    color: yellow;
+
+                }
+                .emptystar {
+                    color: white;
+                }
+            }
         }
     }
 }

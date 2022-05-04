@@ -52,3 +52,16 @@ main .cards .card h6 {
   font-size: 1.1rem;
 }
 
+main .cards .card .stars {
+  padding: 10px 0;
+  display: flex;
+}
+
+main .cards .card .stars .fullstar {
+  color: yellow;
+}
+
+main .cards .card .stars .emptystar {
+  color: white;
+}
+
